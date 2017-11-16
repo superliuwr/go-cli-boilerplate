@@ -1,0 +1,13 @@
+#ignore ide files
+.idea/
+
+#ignore the main binary
+/go-cli-boilerplate
+
+#dont want the dependencies either - use glide to get them
+vendor
+.env
+.DS_Store
+/test
+.vscode
+coverage.out

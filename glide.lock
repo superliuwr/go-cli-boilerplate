@@ -1,0 +1,12 @@
+hash: 20f2483db7009b38518dd46cf8dbecbece1626a60e59d130d5e463d366e2449d
+updated: 2017-11-16T22:33:56.846325+11:00
+imports:
+- name: github.com/joho/godotenv
+  version: a79fa1e548e2c689c241d10173efd51e5d689d5b
+- name: github.com/uber-go/zap
+  version: 35aad584952c3e7020db7b839f6b102de6271f89
+- name: github.com/vrischmann/envconfig
+  version: 757beaaeac8d14bcc7ea3f71488d65cf45cf2eff
+testImports:
+- name: github.com/stretchr/testify
+  version: 69483b4bd14f5845b5a1e55bca19e954e827f1d0

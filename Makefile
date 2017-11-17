@@ -3,10 +3,12 @@ BINARY_NAME := go-cli-boilerplate
 CONTAINER_NAME := go-cli-boilerplate
 IMAGE_NAME := local/go-cli-boilerplate:latest
 
-depend:
-	glide install
+build-all: clean depend fmt cover build
 
 build-all-docker: fmt cover build
+
+depend:
+	glide install
 
 fmt:
 	gofmt -w -s $$(find . -type f -name '*.go' -not -path "./vendor/*")
@@ -46,4 +48,4 @@ run-docker: docker
 stop-docker:
 	docker stop $(CONTAINER_NAME)
 
-.PHONY: depend build build-race build-all-docker fmt cover cover-report test test-race clean run run-docker stop-docker
+.PHONY: depend build build-race build-all build-all-docker fmt cover cover-report test test-race clean run run-docker stop-docker
